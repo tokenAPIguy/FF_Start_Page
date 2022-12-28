@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bcbe987a2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Start Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hello World</h1>
+      <form action="" class="search-bar" value="">
+        <input
+          type="search"
+          placeholder="Search..."
+          id="search"
+          value=""
+          autocomplete="off"
+        />
+      </form>
+    </header>
+    <main>
+      <div class="grid">
+        <div class="grid-item item-main">
+          <img src="assets/makima.png" alt="makima" id="makima" />
+          <!-- <div class="grid-item item-main" style="background-color: red">
+            Hello World
+          </div> -->
+        </div>
+
+        <div class="grid-item link" id="github" onClick="openLink(id)">
+          <i class="fa-brands fa-github-alt"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="grid-item link" id="chat.openai" onClick="openLink(id)">
+          <i class="fa-brands fa-react"></i>
+          <span>ChatGPT</span>
+        </div>
+        <div class="grid-item link" id="reddit" onClick="openLink(id)">
+          <i class="fa-brands fa-reddit-alien"></i>
+          <span>Reddit</span>
+        </div>
+        <div class="grid-item link" id="youtube" onClick="openLink(id)">
+          <i class="fa-brands fa-youtube"></i>
+          <span>YouTube</span>
+        </div>
+        <div class="grid-item link" id="calendar.google" onClick="openLink(id)">
+          <i class="fa-regular fa-calendar"></i> <span>Calendar</span>
+        </div>
+        <div class="grid-item link" id="mail.google" onClick="openLink(id)">
+          <i class="fa-brands fa-google-drive"></i>
+          <span>Mail</span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer><script src="index.js"></script></footer>
+</html>
