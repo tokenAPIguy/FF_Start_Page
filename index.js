@@ -6,11 +6,11 @@ const openLink = (value) => {
 };
 
 //Search by clicking Enter
-const searchTerm = document.getElementById("search").value;
-console.log(document.getElementById("search").value);
+const searchInput = document.getElementById("search");
 
-search.addEventListener("keydown", (searchTerm) => {
-  searchTerm.keyCode === 13
-    ? window.open(`https://google.com/search?q=${search.value}`)
-    : null;
+searchInput.addEventListener("keydown", (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    window.open(`https://google.com/search?q=${searchInput.value}`);
+  }
 });
