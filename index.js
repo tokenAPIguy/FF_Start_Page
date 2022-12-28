@@ -10,6 +10,7 @@ const searchTerm = document.getElementById("search").value;
 console.log(document.getElementById("search").value);
 
 search.addEventListener("keydown", (searchTerm) => {
+  console.log(search.value)
   searchTerm.keyCode === 13
     ? window.open(`https://google.com/search?q=${search.value}`)
     : null;
