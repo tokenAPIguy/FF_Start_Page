@@ -1,12 +1,15 @@
 "use strict";
-
+/******** Needs to be Refactored 🛑 ***********/
 //Open Tabs in new Page
 const openLink = (value) => {
-  console.log(value);
-  value = commodum
-    ? window.open(`https://${value}.testbench.cloud`)
-    : window.open(`https://${value}.com`);
+  window.open(`https://${value}.com`);
 };
+
+//Open Commodum
+const openCommodum = () => {
+  window.open(`https://commodum.testbench.cloud`);
+};
+/*************************************************/
 
 //Search by clicking Enter
 const searchInput = document.getElementById("search");
