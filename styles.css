@@ -84,6 +84,16 @@ main {
 .openai {
   color: #9a7197;
 }
+.commodum {
+  color: #ba5e21;
+}
+
+.commodum:hover {
+  transform: none;
+  transition: 0.5s;
+  opacity: 75%;
+  cursor: pointer;
+}
 
 #reddit {
   color: #f9dc5c;
@@ -98,6 +108,5 @@ main {
 }
 
 .mail {
-  /* color: #ff9770; */
   color: #c1eeff;
 }

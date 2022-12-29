@@ -20,3 +20,19 @@ searchInput.addEventListener("keydown", (event) => {
     window.open(`https://google.com/search?q=${searchInput.value}`);
   }
 });
+
+// Greeting Message
+const greetingMessage = () => {
+  const today = new Date();
+  const hours = today.getHours();
+
+  if (hours < 12 && hours > 4) {
+    return "Good Morning, Jake";
+  } else if (hours > 12 && hours < 6) {
+    return "Good Afternoon, Jake";
+  } else {
+    return "Good Evening, Jake";
+  }
+};
+
+document.getElementById("greeting").innerHTML = greetingMessage();

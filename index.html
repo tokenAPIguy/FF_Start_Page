@@ -19,7 +19,11 @@
   </head>
   <body>
     <header>
-      <h1>Hello World</h1>
+      <h1 id="greeting">
+        <script>
+          greetingMessage();
+        </script>
+      </h1>
       <form action="" class="search-bar" value="">
         <input
           type="search"
@@ -63,6 +67,15 @@
         >
           <i class="fa-regular fa-calendar"></i> <span>Calendar</span>
         </div>
+
+        <div
+          class="grid-item link mail"
+          id="mail.google"
+          onClick="openLink(id)"
+        >
+          <i class="fa-brands fa-google-drive"></i>
+          <span>Mail</span>
+        </div>
         <div
           class="grid-item link commodum"
           id="commodum"
@@ -70,22 +83,6 @@
         >
           <i class="fa-solid fa-code"></i>
           <span>Commodum</span>
-        </div>
-        <div
-          class="grid-item link mail"
-          id="mail.google"
-          onClick="openLink(id)"
-        >
-          <i class="fa-brands fa-google-drive"></i>
-          <span>Mail</span>
-        </div>
-        <div
-          class="grid-item link mail"
-          id="mail.google"
-          onClick="openLink(id)"
-        >
-          <i class="fa-brands fa-google-drive"></i>
-          <span>Mail</span>
         </div>
       </div>
     </main>
