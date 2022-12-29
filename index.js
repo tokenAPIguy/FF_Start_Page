@@ -25,10 +25,11 @@ searchInput.addEventListener("keydown", (event) => {
 const greetingMessage = () => {
   const today = new Date();
   const hours = today.getHours();
+  console.log(hours);
 
-  if (hours < 12 && hours > 4) {
+  if (hours > 4 && hours < 12) {
     return "Good Morning, Jake";
-  } else if (hours > 12 && hours < 6) {
+  } else if (hours > 12 && hours < 18) {
     return "Good Afternoon, Jake";
   } else {
     return "Good Evening, Jake";
@@ -40,7 +41,7 @@ document.getElementById("greeting").innerHTML = greetingMessage();
 // Get Time
 let getTime = () => {
   document.getElementById("getTime").innerHTML = `${moment().format(
-    "MMMM Do YYYY, h:mm:ss a"
+    "MMMM Do YYYY h:mm:ss a"
   )}`;
 };
 
