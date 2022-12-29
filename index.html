@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
       rel="stylesheet"
     />
+    <script src="moment.js"></script>
     <script
       src="https://kit.fontawesome.com/bcbe987a2d.js"
       crossorigin="anonymous"
@@ -21,6 +22,7 @@
     <header>
       <h1 id="greeting"></h1>
       <form action="" class="search-bar" value="">
+        <span>🔎</span>
         <input
           type="search"
           placeholder="Search..."
@@ -34,8 +36,15 @@
       <div class="grid">
         <div class="grid-item item-main">
           <img src="assets/makima.png" alt="makima" id="makima" />
+          <img
+            src="assets/Commodum-logos_white.png"
+            class="grid-item link commodum"
+            id="commodum"
+            onClick="openCommodum()"
+          >
+          </img>
         </div>
-
+        <!--               Tabs                 -->
         <div class="grid-item link" id="github" onClick="openLink(id)">
           <i class="fa-brands fa-github-alt"></i>
           <span>GitHub</span>
@@ -63,7 +72,6 @@
         >
           <i class="fa-regular fa-calendar"></i> <span>Calendar</span>
         </div>
-
         <div
           class="grid-item link mail"
           id="mail.google"
@@ -72,16 +80,41 @@
           <i class="fa-brands fa-google-drive"></i>
           <span>Mail</span>
         </div>
-        <div
-          class="grid-item link commodum"
-          id="commodum"
-          onClick="openCommodum()"
+        <!--           End Tabs                 -->
+        <!--         Weather Widget             -->
+        <a
+          class="weatherwidget-io grid-item link"
+          href="https://forecast7.com/en/38d91n77d04/washington/?unit=us"
+          data-label_1="WASHINGTON D.C."
+          data-label_2="WEATHER"
+          data-font="Ubuntu"
+          data-mode="Current"
+          data-theme="pure"
+          data-basecolor="#44403C"
+          data-textcolor="#FAFAF9"
+          data-mooncolor="#d9d9d9"
+          data-cloudcolor="#d9d9d9"
+          >WASHINGTON D.C. WEATHER</a
         >
-          <i class="fa-solid fa-code"></i>
-          <span>Commodum</span>
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://weatherwidget.io/js/widget.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, "script", "weatherwidget-io-js");
+        </script>
+        <!--       End Weather Widget           -->
+        <div class="grid-item link" id="getTime" >
         </div>
       </div>
     </main>
   </body>
-  <footer><script src="index.js"></script></footer>
+  <footer>
+    <script src="index.js"></script>
+  </footer>
 </html>

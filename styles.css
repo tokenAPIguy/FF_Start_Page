@@ -56,7 +56,7 @@ main {
   display: flex;
   grid-column: 1 / 3;
   grid-row: 1 / 7;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .search-bar input {
@@ -66,15 +66,29 @@ main {
   background-color: #292524;
   border: none;
   padding: 16px;
+  padding-top: 32px;
+  padding-left: 0;
   outline: none;
   align-items: flex-end;
-  width: 100%;
+  width: 1fr;
 }
 
 #makima {
   max-width: 300px;
   padding: 10px;
   padding-bottom: 0;
+}
+
+#commodum {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+#commodum:hover {
+  opacity: 50%;
+  transform: none;
 }
 
 /* Links */
@@ -88,12 +102,12 @@ main {
   color: #ba5e21;
 }
 
-.commodum:hover {
+/* .commodum:hover {
   transform: none;
   transition: 0.5s;
   opacity: 75%;
   cursor: pointer;
-}
+} */
 
 #reddit {
   color: #f9dc5c;
@@ -109,4 +123,17 @@ main {
 
 .mail {
   color: #c1eeff;
+}
+
+.weatherwidget-io:hover {
+  transform: none;
+}
+
+#getTime {
+  font-size: 32px;
+}
+#getTime:hover {
+  transform: none;
+  cursor: default;
+  opacity: 100%;
 }

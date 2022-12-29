@@ -36,3 +36,13 @@ const greetingMessage = () => {
 };
 
 document.getElementById("greeting").innerHTML = greetingMessage();
+
+// Get Time
+let getTime = () => {
+  document.getElementById("getTime").innerHTML = `${moment().format(
+    "MMMM Do YYYY, h:mm:ss a"
+  )}`;
+};
+
+getTime();
+setInterval(getTime, 1000);
