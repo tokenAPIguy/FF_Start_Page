@@ -2,7 +2,10 @@
 
 //Open Tabs in new Page
 const openLink = (value) => {
-  window.open(`https://${value}.com`);
+  console.log(value);
+  value = commodum
+    ? window.open(`https://${value}.testbench.cloud`)
+    : window.open(`https://${value}.com`);
 };
 
 //Search by clicking Enter

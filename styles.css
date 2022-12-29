@@ -76,3 +76,28 @@ main {
   padding: 10px;
   padding-bottom: 0;
 }
+
+/* Links */
+#github {
+  color: #72a98f;
+}
+.openai {
+  color: #9a7197;
+}
+
+#reddit {
+  color: #f9dc5c;
+}
+
+#youtube {
+  color: #e84855;
+}
+
+.calendar {
+  color: #3185fc;
+}
+
+.mail {
+  /* color: #ff9770; */
+  color: #c1eeff;
+}
