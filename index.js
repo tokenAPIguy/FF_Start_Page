@@ -9,6 +9,11 @@ const openLink = (value) => {
 const openCommodum = () => {
   window.open(`https://commodum.testbench.cloud`);
 };
+
+//Open Messages
+const openMessages = () => {
+  window.open(`https://messages.google.com/web/conversations`);
+};
 /*************************************************/
 
 //Search by clicking Enter
@@ -37,6 +42,7 @@ const greetingMessage = () => {
 };
 
 document.getElementById("greeting").innerHTML = greetingMessage();
+setInterval(greetingMessage, 3600000);
 
 // Get Time
 let getTime = () => {

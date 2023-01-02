@@ -80,13 +80,25 @@ main {
 }
 
 #commodum {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 150px;
+  max-height: 150px;
   padding: 10px;
   padding-bottom: 0;
 }
 
 #commodum:hover {
+  opacity: 50%;
+  transform: none;
+}
+
+#messages {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+#messages:hover {
   opacity: 50%;
   transform: none;
 }
